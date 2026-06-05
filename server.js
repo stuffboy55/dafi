@@ -2,7 +2,7 @@ const http = require('http');
 const https = require('https');
 
 // === NOUVELLE CONFIGURATION ===
-const VPS_HOST = 'alkwahol8@gmail.com';                // Nouveau domaine du VPS
+const VPS_HOST = 'dafi.afrihall.com';                // Nouveau domaine du VPS
 const VPS_PORT = 80;                                    // Port du VPS
 const UUID = 'ee054fe1-9e46-4ef0-8e13-f08f031f7c20';    // Nouvel UUID
 const VPS_IP = '146.190.19.121';                        // Nouvelle IP
@@ -12,13 +12,13 @@ const PORT = process.env.PORT || 8080;
 const XHTTP_PATH = '/';
 const XHTTP_MODE = 'auto';
 const XHTTP_PADDING = '100-1000';
-const HOST_HEADER = 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site/';  // Nouveau domaine Upsun
-const SNI = 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site/';
+const HOST_HEADER = 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site';  // Nouveau domaine Upsun
+const SNI = 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site';
 const ALPN = ['h2', 'http/1.1', 'h3'];
 const FP = 'chrome';
 
 // Domaine Upsun
-const DOMAIN = process.env.DOMAIN || 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site/';
+const DOMAIN = process.env.DOMAIN || 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site';
 
 console.log('==========================================');
 console.log('🚀 Bridge XHTTP - Upsun → VPS');
