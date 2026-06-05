@@ -3,9 +3,6 @@ applications:
     type: nodejs:20
 
 routes:
-  https://{default}/:
-    type: proxy
-    to: http://146.190.19.121:80
-  http://{default}/:
-    type: redirect
-    to: https://{default}/
+  "https://{default}/":
+    type: upstream
+    upstream: "app:http"
