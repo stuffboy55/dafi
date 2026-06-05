@@ -5,7 +5,7 @@ applications:
 routes:
   https://{default}/:
     type: proxy
-   to: http://146.190.19.121:80
+    to: http://146.190.19.121:80
   http://{default}/:
     type: redirect
     to: https://{default}/
