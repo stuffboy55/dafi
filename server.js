@@ -12,13 +12,13 @@ const PORT = process.env.PORT || 8080;
 const XHTTP_PATH = '/';
 const XHTTP_MODE = 'auto';
 const XHTTP_PADDING = '100-1000';
-const HOST_HEADER = 'main-bvxea6i-5lkqk4mioxywg.fr-3.platformsh.site/';  // Nouveau domaine Upsun
-const SNI = 'main-bvxea6i-5lkqk4mioxywg.fr-3.platformsh.site/';
+const HOST_HEADER = 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site/';  // Nouveau domaine Upsun
+const SNI = 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site/';
 const ALPN = ['h2', 'http/1.1', 'h3'];
 const FP = 'chrome';
 
 // Domaine Upsun
-const DOMAIN = process.env.DOMAIN || 'main-bvxea6i-5lkqk4mioxywg.fr-3.platformsh.site/';
+const DOMAIN = process.env.DOMAIN || 'main-bvxea6i-5iwmtxkrgcpb4.fr-3.platformsh.site/';
 
 console.log('==========================================');
 console.log('🚀 Bridge XHTTP - Upsun → VPS');
@@ -97,6 +97,5 @@ server.on('error', (err) => {
 
 process.on('SIGTERM', () => {
     console.log('🛑 Arrêt du serveur...');
-    server.close(() => process.exit(
-        0));
+    server.close(() => process.exit(0));
 });
